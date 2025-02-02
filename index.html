@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Green Haven Resorts - Eco-Friendly Luxury</title>
+      <!-- Bootstrap CSS -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+      <!-- Google Fonts (optional) -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Font Awesome for Icons -->
+      <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+      ></script>
+      <style>
+        /* Global Styles */
+        body {
+          font-family: "Montserrat", sans-serif;
+          scroll-behavior: smooth;
+        }
+        /* Navbar */
+        .navbar-brand {
+          font-weight: 700;
+        }
+        /* Hero Section */
+        #hero {
+          background: url("images/building.png") no-repeat center center/cover;
+          height: 100vh;
+          position: relative;
+          color: #fff;
+        }
+        #hero::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        #hero .container {
+          position: relative;
+          z-index: 2;
+        }
+        /* Section Styles */
+        section {
+          padding: 60px 0;
+        }
+        /* Footer */
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px 0;
+          text-align: center;
+        }
+        /* Booking & Contact Forms */
+        .form-section {
+          background-color: #f8f9fa;
+          padding: 40px 0;
+        }
+        @media (max-width: 768px) {
+          #hero {
+            height: 70vh;
+          }
+        }
+        /* Global Styles */
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #25d366;
+          color: white;
+          border-radius: 50%;
+          padding: 15px;
+          font-size: 24px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-float:hover {
+          background-color: #1ebea5;
+          text-decoration: none;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- WhatsApp Contact Button -->
+      <a
+        href="https://wa.me/YOUR_PHONE_NUMBER"
+        class="whatsapp-float"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- JavaScript Files (jQuery, Popper.js, Bootstrap JS) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#hero">GHR</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#accommodations">Accommodations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dining">Dining</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#activities">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sustainability">Sustainability</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white" href="#bookNow"
+                  >Book Now</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home / Hero Section -->
+      <header id="hero" class="d-flex align-items-center">
+        <div class="container text-center">
+          <h1 class="display-4">Luxury in Harmony with Nature</h1>
+          <p class="lead">
+            Experience sustainable luxury at Green Haven Resorts
+          </p>
+          <a href="#bookNow" class="btn btn-lg btn-success"
+            >Book Your Eco Retreat</a
+          >
+        </div>
+      </header>
+
+      <!-- Accommodations Section -->
+      <section id="accommodations">
+        <div class="container">
+          <h2 class="text-center">Accommodations</h2>
+          <div class="row mt-4">
+            <!-- Example Accommodation Card -->
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="images/Family Suite.png"
+                  class="card-img-top"
+                  alt="Family Suite"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Family Suite</h5>
+                  <p class="card-text">
+                    Spacious and eco-friendly suite perfect for families.
+                  </p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat cards for Deluxe Rooms and Eco-Friendly Cabins -->
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="images/Deluxe Room.png"
+                  class="card-img-top"
+                  alt="Deluxe Room"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Deluxe Room</h5>
+                  <p class="card-text">
+                    Elegant comfort with eco-friendly amenities.
+                  </p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="images/Eco Friendly Cabin.png"
+                  class="card-img-top"
+                  alt="Eco-Friendly Cabin"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Eco-Friendly Cabin</h5>
+                  <p class="card-text">
+                    A cozy retreat blending luxury with nature.
+                  </p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dining Section -->
+      <section id="dining" class="bg-light">
+        <div class="container">
+          <h2 class="text-center">Dining</h2>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img
+                src="images/Organic Restaurant.jpg"
+                class="img-fluid"
+                alt="Organic Restaurant"
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h4>Organic Restaurant</h4>
+              <p>
+                Enjoy farm-to-table cuisine made from locally sourced, organic
+                ingredients.
+              </p>
+              <a href="#" class="btn btn-primary">Reserve a Table</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section id="activities">
+        <div class="container">
+          <h2 class="text-center">Activities</h2>
+          <div class="row mt-4">
+            <!-- Activity Card Example -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/Yoga.png" class="card-img-top" alt="Yoga" />
+                <div class="card-body">
+                  <h5 class="card-title">Yoga</h5>
+                  <p class="card-text">Morning yoga sessions amidst nature.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for Nature Walks, Mountain Biking, etc. -->
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="images/Nature Walks.png"
+                  class="card-img-top"
+                  alt="Nature Walks"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nature Walks</h5>
+                  <p class="card-text">
+                    Guided walks to explore the local flora and fauna.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="images/Mountain Biking.png"
+                  class="card-img-top"
+                  alt="Mountain Biking"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mountain Biking</h5>
+                  <p class="card-text">Explore scenic trails on a bike.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sustainability Section -->
+      <section id="sustainability" class="bg-light">
+        <div class="container">
+          <h2 class="text-center">Sustainability</h2>
+          <div class="row text-center mt-4">
+            <div class="col-md-3">
+              <i class="fas fa-solar-panel fa-3x"></i>
+              <h4>Solar Energy</h4>
+              <p>Harnessing renewable energy.</p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-tint fa-3x"></i>
+              <h4>Rainwater Harvesting</h4>
+              <p>Efficient water management.</p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-seedling fa-3x"></i>
+              <h4>Organic Farming</h4>
+              <p>Locally sourced, organic produce.</p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-leaf fa-3x"></i>
+              <h4>Eco Practices</h4>
+              <p>Committed to a greener future.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <div class="container">
+          <h2 class="text-center">Gallery</h2>
+          <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+              <img
+                src="images/Resort nature.png"
+                class="img-fluid"
+                alt="Resort View"
+              />
+            </div>
+            <div class="col-md-4 mb-4">
+              <img
+                src="images/Restaurant nature.png"
+                class="img-fluid"
+                alt="Restaurant"
+              />
+            </div>
+            <div class="col-md-4 mb-4">
+              <img src="images/Activity.png" class="img-fluid" alt="Activity" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="form-section">
+        <div class="container">
+          <h2 class="text-center">Contact Us</h2>
+          <form id="contactForm" class="mt-4">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contactName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contactEmail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea
+                class="form-control"
+                id="contactMessage"
+                rows="3"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Book Now Section -->
+      <section id="bookNow" class="form-section">
+        <div class="container">
+          <h2 class="text-center">Book Your Eco Retreat</h2>
+          <form id="bookingForm" class="mt-4">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="guestName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="guestName"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="guestEmail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="guestEmail"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="checkInDate">Check-In Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkInDate"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="checkOutDate">Check-Out Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkOutDate"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="roomType">Room Type</label>
+                <select id="roomType" class="form-control" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Family Suite</option>
+                  <option>Deluxe Room</option>
+                  <option>Eco-Friendly Cabin</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guestMessage">Special Requests</label>
+              <textarea
+                class="form-control"
+                id="guestMessage"
+                rows="3"
+                placeholder="Any special requests?"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Green Haven Resorts. All rights reserved.</p>
+          <p>
+            Sustainability Commitment | Privacy Policy | Terms &amp; Conditions
+          </p>
+        </div>
+      </footer>
+
+      <!-- JavaScript Files (jQuery, Popper.js, Bootstrap JS) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        // Booking Form Submission Handler
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("guestName").value;
+            const email = document.getElementById("guestEmail").value;
+            const checkIn = document.getElementById("checkInDate").value;
+            const checkOut = document.getElementById("checkOutDate").value;
+            const roomType = document.getElementById("roomType").value;
+            if (!name || !email || !checkIn || !checkOut || !roomType) {
+              alert("Please fill in all required fields.");
+              return;
+            }
+            alert(
+              `Thank you, ${name}! Your booking from ${checkIn} to ${checkOut} for a ${roomType} has been received.`
+            );
+            this.reset();
+          });
+
+        // Contact Form Submission Handler
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("contactName").value;
+            const email = document.getElementById("contactEmail").value;
+            const message = document.getElementById("contactMessage").value;
+            if (!name || !email || !message) {
+              alert("Please complete all fields.");
+              return;
+            }
+            alert(`Thank you, ${name}! We have received your message.`);
+            this.reset();
+          });
+      </script>
+    </body>
+  </html>
+</html>
